@@ -6,7 +6,7 @@ import tensorflow as tf
 
 NOME_AMBIENTE = "CartPole-v1"
 CAMINHO_MODELO = "modelos/agente_cartpole.keras"
-NUMERO_DE_EPISODIOS = 5
+NUMERO_DE_EPISODIOS = 20
 
 
 def escolher_melhor_acao(modelo, estado):
@@ -71,6 +71,10 @@ def main():
     print("\nTeste concluído.")
     print(f"Recompensas: {recompensas}")
     print(f"Recompensa média: {media:.2f}")
+    print(f"Melhor recompensa: {max(recompensas):.2f}")
+    print(f"Pior recompensa: {min(recompensas):.2f}")
+    print(f"Desvio padrão: {np.std(recompensas):.2f}")
+
 
 
 if __name__ == "__main__":
