@@ -1,0 +1,7 @@
+@"
+tensorflow
+gymnasium[classic-control]
+numpy
+matplotlib
+pandas
+"@ | Set-Content requirements.txt
