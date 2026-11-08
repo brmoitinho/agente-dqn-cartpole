@@ -1,4 +1,3 @@
-@"
 # Agente DQN para CartPole-v1
 
 ## Objetivo
